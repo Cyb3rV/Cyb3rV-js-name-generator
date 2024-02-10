@@ -15,7 +15,7 @@ window.onload = function() {
   for (let i of pronoun)
     for (let j of adj)
       for (let k of noun) {
-        domains.push(i + j + k + ".com");
+        domains.push(`${i}${j}${k}.com`);
       }
 
   document.querySelector("div").innerHTML = domains.join("<br/>");
